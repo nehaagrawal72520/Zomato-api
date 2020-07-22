@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test thread-count="5" name="city">
+		<classes>
+			<class name="com.qa.TestCase.City" />
+		</classes>
+	</test> <!-- Test -->
+	<test thread-count="5" name="Dailymenu">
+		<classes>
+			<class name="com.qa.TestCase.Dailymenu" />
+
+
+		</classes>
+	</test> <!-- Test -->
+
+	<test thread-count="5" name="Establishments">
+		<classes>
+
+			<class name="com.qa.TestCase.Establishments" />
+
+
+		</classes>
+	</test> <!-- Test -->
+
+
+	<test thread-count="5" name="Location">
+		<classes>
+
+			<class name="com.qa.TestCase.Location" />
+
+		</classes>
+	</test> <!-- Test -->
+
+
+</suite> <!-- Suite -->

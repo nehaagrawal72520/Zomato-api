@@ -1,0 +1,417 @@
+<html>
+<head>
+<title>TestNG:  Dailymenu</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Dailymenu</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>3/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Jul 14 20:46:25 IST 2020</td>
+</tr>
+<tr><td>Total time:</td><td>0 seconds (632 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.qa.TestCase.Dailymenu.checkrestid()'><b>checkrestid</b><br>Test class: com.qa.TestCase.Dailymenu<br/>
+<a href="#Output-1042891691" onClick='toggleBox("Output-1042891691", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1042891691" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1042891691">
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+<br/>
+Response Body Json: {
+  "code": 400,
+  "status": "Bad Request",
+  "message": "No Daily Menu Available"
+}<br/>
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=<br/>
+No daily menu available with invalid entity-id<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.qa.TestCase.Dailymenu@158a8276</td></tr>
+<tr>
+<td title='com.qa.TestCase.Dailymenu.checksuccessresponsecode()'><b>checksuccessresponsecode</b><br>Test class: com.qa.TestCase.Dailymenu<br/>
+<a href="#Output-1335061928" onClick='toggleBox("Output-1335061928", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1335061928" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1335061928">
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+<br/>
+Response Body Json: 200<br/>
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=<br/>
+getting success response<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.qa.TestCase.Dailymenu@158a8276</td></tr>
+<tr>
+<td title='com.qa.TestCase.Dailymenu.validatedailymenu()'><b>validatedailymenu</b><br>Test class: com.qa.TestCase.Dailymenu<br/>
+<a href="#Output-1627010197" onClick='toggleBox("Output-1627010197", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1627010197" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1627010197">
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+<br/>
+Response Body Json: {
+  "daily_menus": [
+    {
+      "daily_menu": {
+        "daily_menu_id": "20951458",
+        "start_date": "2020-07-14 00:00:00",
+        "end_date": "2020-07-14 23:59:59",
+        "name": "",
+        "dishes": [
+          {
+            "dish": {
+              "dish_id": "705488337",
+              "name": "Čočková polévka s uzeninou",
+              "price": "45 Kč"
+            }
+          },
+          {
+            "dish": {
+              "dish_id": "705488338",
+              "name": "Lentil soup with sausage",
+              "price": "45 Kč"
+            }
+          },
+          {
+            "dish": {
+              "dish_id": "705488339",
+              "name": "Deep fried pork meatball with cheese, mashed potatoes and pickles",
+              "price": "135 Kč"
+            }
+          },
+          {
+            "dish": {
+              "dish_id": "705488340",
+              "name": "Hovězí maso stroganoff, rýže basmati",
+              "price": "149 Kč"
+            }
+          },
+          {
+            "dish": {
+              "dish_id": "705488341",
+              "name": "Beef stroganoff with basmati rice",
+              "price": "149 Kč"
+            }
+          },
+          {
+            "dish": {
+              "dish_id": "705488342",
+              "name": "Bryndzové halušky s osmaženou cibulkou, se slaninou nebo bez",
+              "price": "129 Kč"
+            }
+          },
+          {
+            "dish": {
+              "dish_id": "705488343",
+              "name": "Slovak style gnocchi with sheep cheese and fried onions, with or without bacon",
+              "price": "129 Kč"
+            }
+          },
+          {
+            "dish": {
+              "dish_id": "705488344",
+              "name": "Smažený vepřový karbanátek se sýrem, bramborová kaše, kyselá okurka",
+              "price": "135 Kč"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "daily_menu": {
+        "daily_menu_id": "17178053",
+        "start_date": "2020-07-14 00:00:00",
+        "name": "Polévky",
+        "dishes": [
+          {
+            "dish": {
+              "dish_id": "634207002",
+              "name": "Bramboračka s hříbky",
+              "price": "45 Kč"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "daily_menu": {
+        "daily_menu_id": "17178059",
+        "start_date": "2020-07-14 00:00:00",
+        "name": "Předkrmy / Jídla k pivu",
+        "dishes": [
+          {
+            "dish": {
+              "dish_id": "634206981",
+              "name": "Kachní paštika s brusinkami, mandlemi a cibulovou marmeládou",
+              "price": "89 Kč"
+            }
+          },
+          {
+            "dish": {
+              "dish_id": "634206982",
+              "name": "Studený roastbeef s hořčičnou omáčkou a okurkou",
+              "price": "99 Kč"
+            }
+          },
+          {
+            "dish": {
+              "dish_id": "634206983",
+              "name": "Rillettes z vepřového masa s hořčičnou omáčkou",
+              "price": "85 Kč"
+            }
+          },
+          {
+            "dish": {
+              "dish_id": "634206984",
+              "name": "Nakládaný hermelín",
+              "price": "85 Kč"
+            }
+          },
+          {
+            "dish": {
+              "dish_id": "634206985",
+              "name": "Nakládané olomoucké tvarůžky  ",
+              "price": "79 Kč"
+            }
+          },
+          {
+            "dish": {
+              "dish_id": "634206986",
+              "name": "Domácí škvarková pomazánka s cibulkou",
+              "price": "65 Kč"
+            }
+          },
+          {
+            "dish": {
+              "dish_id": "634206987",
+              "name": "Tlačenka s cibulkou a octem",
+              "price": "59 Kč"
+            }
+          },
+          {
+            "dish": {
+              "dish_id": "634206988",
+              "name": "Jehněčí klobásky s hořčičným dipem a malým zelným salátem",
+              "price": "89 Kč"
+            }
+          },
+          {
+            "dish": {
+              "dish_id": "634206989",
+              "name": "Špekáčky na černém pivu",
+              "price": "89 Kč"
+            }
+          },
+          {
+            "dish": {
+              "dish_id": "634206990",
+              "name": "Slané pražené mandle (80 g)",
+              "price": "79 Kč"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "daily_menu": {
+        "daily_menu_id": "17178061",
+        "start_date": "2020-07-14 00:00:00",
+        "name": "Hlavní chody",
+        "dishes": [
+          {
+            "dish": {
+              "dish_id": "634206991",
+              "name": "Dančí svíčková s karlovarským knedlíkem a brusinkami",
+              "price": "239 Kč"
+            }
+          },
+          {
+            "dish": {
+              "dish_id": "634206992",
+              "name": "Grilovaný flapsteak s gratinovanými bramborami a zelenými fazolkami, omáčka z pečeného česneku",
+              "price": "249 Kč"
+            }
+          },
+          {
+            "dish": {
+              "dish_id": "634206993",
+              "name": "Marinovaná pečená vepřová žebra s česnekovou majonézou",
+              "price": "196 Kč"
+            }
+          },
+          {
+            "dish": {
+              "dish_id": "634206994",
+              "name": "Medailonky z vepřové panenky s pečenou paprikou, brambory Grenaille a omáčka s rozmarýnem",
+              "price": "229 Kč"
+            }
+          },
+          {
+            "dish": {
+              "dish_id": "634206995",
+              "name": "Rolované farmářské kuře marinované v brandy, smetanová br. kaše s list. špenátem",
+              "price": "165 Kč"
+            }
+          },
+          {
+            "dish": {
+              "dish_id": "634206996",
+              "name": "Bůček na černém pivu s červeným zelím a bramborovými špalíky",
+              "price": "149 Kč"
+            }
+          },
+          {
+            "dish": {
+              "dish_id": "634206997",
+              "name": "Smažený řízek z přeštického prasátka s lehkým bramborovým salátem",
+              "price": "185 Kč"
+            }
+          },
+          {
+            "dish": {
+              "dish_id": "634206998",
+              "name": "Naše bramborové špalíky se smetanovým listovým špenátem",
+              "price": "99 Kč"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "daily_menu": {
+        "daily_menu_id": "17178064",
+        "start_date": "2020-07-14 00:00:00",
+        "name": "Saláty",
+        "dishes": [
+          {
+            "dish": {
+              "dish_id": "635121494",
+              "name": "Salát se smaženými kuřecími proužky",
+              "price": "129 Kč"
+            }
+          },
+          {
+            "dish": {
+              "dish_id": "635121495",
+              "name": "Salát s roastbeefem a pikantním česnekovým dresinkem",
+              "price": "149 Kč"
+            }
+          },
+          {
+            "dish": {
+              "dish_id": "635121496",
+              "name": "Salát z mladého špenátu a hrášku s šalotkou a čerstvým kozím sýrem",
+              "price": "129 Kč"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "daily_menu": {
+        "daily_menu_id": "17191110",
+        "start_date": "2020-07-14 00:00:00",
+        "name": "Dezert",
+        "dishes": [
+          {
+            "dish": {
+              "dish_id": "631103520",
+              "name": "Čokoládová pěna s višněmi marinovanými v griotce",
+              "price": "55 Kč"
+            }
+          },
+          {
+            "dish": {
+              "dish_id": "631103521",
+              "name": "Šlehaná zakysaná smetana s medem a čerstvým ovocem, máta",
+              "price": "55 Kč"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "status": "success"
+}<br/>
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=<br/>
+Response is showing correctly <br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.qa.TestCase.Dailymenu@158a8276</td></tr>
+</table><p>
+</body>
+</html>

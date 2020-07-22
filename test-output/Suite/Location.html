@@ -1,0 +1,455 @@
+<html>
+<head>
+<title>TestNG:  Location</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Location</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>4/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Jul 14 20:46:36 IST 2020</td>
+</tr>
+<tr><td>Total time:</td><td>0 seconds (899 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.qa.TestCase.Location.checkentityid()'><b>checkentityid</b><br>Test class: com.qa.TestCase.Location<br/>
+<a href="#Output-779598031" onClick='toggleBox("Output-779598031", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-779598031" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-779598031">
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+<br/>
+Response Body Json: {
+  "code": 403,
+  "status": "Forbidden",
+  "message": "Invalid location parameters"
+}<br/>
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=<br/>
+getting failure response with invalid entity-id<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.qa.TestCase.Location@6a2f6f80</td></tr>
+<tr>
+<td title='com.qa.TestCase.Location.checkentitytype()'><b>checkentitytype</b><br>Test class: com.qa.TestCase.Location<br/>
+<a href="#Output-1764291958" onClick='toggleBox("Output-1764291958", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1764291958" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1764291958">
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+<br/>
+Response Body Json: {
+  "code": 403,
+  "status": "Forbidden",
+  "message": "Invalid location parameters"
+}<br/>
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=<br/>
+getting failure response with invalid entity-type<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.qa.TestCase.Location@6a2f6f80</td></tr>
+<tr>
+<td title='com.qa.TestCase.Location.checksuccessresponsecode()'><b>checksuccessresponsecode</b><br>Test class: com.qa.TestCase.Location<br/>
+<a href="#Output-567656864" onClick='toggleBox("Output-567656864", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-567656864" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-567656864">
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+<br/>
+Response Body Json: 200<br/>
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=<br/>
+getting success response code<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.qa.TestCase.Location@6a2f6f80</td></tr>
+<tr>
+<td title='com.qa.TestCase.Location.validateentityidandtype()'><b>validateentityidandtype</b><br>Test class: com.qa.TestCase.Location<br/>
+<a href="#Output-24097622" onClick='toggleBox("Output-24097622", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-24097622" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-24097622">
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+<br/>
+Response Body Json: {
+  "popularity": "4.81",
+  "nightlife_index": "4.77",
+  "nearby_res": [
+    "17017688",
+    "17011297",
+    "17014029",
+    "17011537",
+    "17009051",
+    "17010619",
+    "17020821",
+    "17021609",
+    "17010970"
+  ],
+  "top_cuisines": [
+    "American",
+    "Sandwich",
+    "Cafe",
+    "Chinese",
+    "Bar Food"
+  ],
+  "popularity_res": "100",
+  "nightlife_res": "10",
+  "subzone": "Logan Square",
+  "subzone_id": 118207,
+  "city": "Philadelphia",
+  "location": {
+    "entity_type": "group",
+    "entity_id": 36989,
+    "title": "Museum Towers, Philadelphia",
+    "latitude": 39.9630305556,
+    "longitude": -75.168175,
+    "city_id": 287,
+    "city_name": "Philadelphia",
+    "country_id": 216,
+    "country_name": "United States"
+  },
+  "num_restaurant": 3,
+  "best_rated_restaurant": [
+    {
+      "restaurant": {
+        "R": {
+          "has_menu_status": {
+            "delivery": -1,
+            "takeaway": -1
+          },
+          "res_id": 17011924,
+          "is_grocery_store": false
+        },
+        "apikey": "82cf521776cb3d225ae238f11b7d69b1",
+        "id": "17011924",
+        "name": "Golden Chopstick",
+        "url": "https://www.zomato.com/philadelphia/golden-chopstick-logan-square?utm_source\u003dapi_basic_user\u0026utm_medium\u003dapi\u0026utm_campaign\u003dv2.1",
+        "location": {
+          "address": "Museum Towers, 1800 Spring Garden Street, Philadelphia 19130",
+          "locality": "Museum Towers",
+          "city": "Philadelphia",
+          "city_id": 287,
+          "latitude": "39.9630305556",
+          "longitude": "-75.1681750000",
+          "zipcode": "19130",
+          "country_id": 216,
+          "locality_verbose": "Museum Towers, Philadelphia"
+        },
+        "switch_to_order_menu": 0,
+        "cuisines": "Chinese, Asian",
+        "timings": "11 AM to 10:30 PM (Mon-Sat),12 Noon to 10:30 PM (Sun)",
+        "average_cost_for_two": 25,
+        "price_range": 1,
+        "currency": "$",
+        "highlights": [
+          "Lunch",
+          "Takeaway Available",
+          "Dinner",
+          "Indoor Seating",
+          "Wifi",
+          "ATM"
+        ],
+        "offers": [],
+        "opentable_support": 0,
+        "is_zomato_book_res": 0,
+        "mezzo_provider": "OTHER",
+        "is_book_form_web_view": 0,
+        "book_form_web_view_url": "",
+        "book_again_url": "",
+        "thumb": "https://b.zmtcdn.com/data/res_imagery/17011924_RESTAURANT_51c1e0c30f8504253198995eb4cc5359_c.jpg?fit\u003daround%7C200%3A200\u0026crop\u003d200%3A200%3B%2A%2C%2A",
+        "user_rating": {
+          "aggregate_rating": "3.4",
+          "rating_text": "Average",
+          "rating_color": "CDD614",
+          "rating_obj": {
+            "title": {
+              "text": "3.4"
+            },
+            "bg_color": {
+              "type": "lime",
+              "tint": "500"
+            }
+          },
+          "votes": 16
+        },
+        "all_reviews_count": 3,
+        "photos_url": "https://www.zomato.com/philadelphia/golden-chopstick-logan-square/photos?utm_source\u003dapi_basic_user\u0026utm_medium\u003dapi\u0026utm_campaign\u003dv2.1#tabtop",
+        "photo_count": 13,
+        "menu_url": "https://www.zomato.com/philadelphia/golden-chopstick-logan-square/menu?utm_source\u003dapi_basic_user\u0026utm_medium\u003dapi\u0026utm_campaign\u003dv2.1\u0026openSwipeBox\u003dmenu\u0026showMinimal\u003d1#tabtop",
+        "featured_image": "https://b.zmtcdn.com/data/res_imagery/17011924_RESTAURANT_51c1e0c30f8504253198995eb4cc5359_c.jpg",
+        "has_online_delivery": 0,
+        "is_delivering_now": 0,
+        "store_type": "",
+        "include_bogo_offers": true,
+        "deeplink": "zomato://restaurant/17011924",
+        "is_table_reservation_supported": 0,
+        "has_table_booking": 0,
+        "events_url": "https://www.zomato.com/philadelphia/golden-chopstick-logan-square/events#tabtop?utm_source\u003dapi_basic_user\u0026utm_medium\u003dapi\u0026utm_campaign\u003dv2.1",
+        "phone_numbers": "(215) 496-9190",
+        "all_reviews": {
+          "reviews": [
+            {
+              "review": []
+            },
+            {
+              "review": []
+            },
+            {
+              "review": []
+            }
+          ]
+        },
+        "establishment": [
+          "Casual Dining"
+        ]
+      }
+    },
+    {
+      "restaurant": {
+        "R": {
+          "has_menu_status": {
+            "delivery": -1,
+            "takeaway": -1
+          },
+          "res_id": 18026968,
+          "is_grocery_store": false
+        },
+        "apikey": "82cf521776cb3d225ae238f11b7d69b1",
+        "id": "18026968",
+        "name": "Museum Market",
+        "url": "https://www.zomato.com/philadelphia/museum-market-logan-square?utm_source\u003dapi_basic_user\u0026utm_medium\u003dapi\u0026utm_campaign\u003dv2.1",
+        "location": {
+          "address": "Museum Towers, 1800 Spring Garden, Philadelphia 19130",
+          "locality": "Museum Towers",
+          "city": "Philadelphia",
+          "city_id": 287,
+          "latitude": "39.9632111111",
+          "longitude": "-75.1687694444",
+          "zipcode": "19130",
+          "country_id": 216,
+          "locality_verbose": "Museum Towers, Philadelphia"
+        },
+        "switch_to_order_menu": 0,
+        "cuisines": "Deli",
+        "timings": "7 AM to 9 PM (Mon-Fri),8 AM to 8 PM (Sat-Sun)",
+        "average_cost_for_two": 15,
+        "price_range": 1,
+        "currency": "$",
+        "highlights": [
+          "Credit Card",
+          "Breakfast",
+          "Takeaway Available",
+          "Lunch"
+        ],
+        "offers": [],
+        "opentable_support": 0,
+        "is_zomato_book_res": 0,
+        "mezzo_provider": "OTHER",
+        "is_book_form_web_view": 0,
+        "book_form_web_view_url": "",
+        "book_again_url": "",
+        "thumb": "",
+        "user_rating": {
+          "aggregate_rating": 0,
+          "rating_text": "Not rated",
+          "rating_color": "CBCBCB",
+          "rating_obj": {
+            "title": {
+              "text": "-"
+            },
+            "bg_color": {
+              "type": "grey",
+              "tint": "400"
+            }
+          },
+          "votes": 0
+        },
+        "all_reviews_count": 0,
+        "photos_url": "https://www.zomato.com/philadelphia/museum-market-logan-square/photos?utm_source\u003dapi_basic_user\u0026utm_medium\u003dapi\u0026utm_campaign\u003dv2.1#tabtop",
+        "photo_count": 2,
+        "menu_url": "https://www.zomato.com/philadelphia/museum-market-logan-square/menu?utm_source\u003dapi_basic_user\u0026utm_medium\u003dapi\u0026utm_campaign\u003dv2.1\u0026openSwipeBox\u003dmenu\u0026showMinimal\u003d1#tabtop",
+        "featured_image": "",
+        "has_online_delivery": 0,
+        "is_delivering_now": 0,
+        "store_type": "",
+        "include_bogo_offers": true,
+        "deeplink": "zomato://restaurant/18026968",
+        "is_table_reservation_supported": 0,
+        "has_table_booking": 0,
+        "events_url": "https://www.zomato.com/philadelphia/museum-market-logan-square/events#tabtop?utm_source\u003dapi_basic_user\u0026utm_medium\u003dapi\u0026utm_campaign\u003dv2.1",
+        "phone_numbers": "Not available for this place",
+        "all_reviews": {
+          "reviews": []
+        },
+        "establishment": [
+          "Deli"
+        ]
+      }
+    },
+    {
+      "restaurant": {
+        "R": {
+          "has_menu_status": {
+            "delivery": -1,
+            "takeaway": -1
+          },
+          "res_id": 17022905,
+          "is_grocery_store": false
+        },
+        "apikey": "82cf521776cb3d225ae238f11b7d69b1",
+        "id": "17022905",
+        "name": "Subway",
+        "url": "https://www.zomato.com/philadelphia/subway-logan-square?utm_source\u003dapi_basic_user\u0026utm_medium\u003dapi\u0026utm_campaign\u003dv2.1",
+        "location": {
+          "address": "Museum Towers, 1800 Spring Garden Street, Philadelphia 19130",
+          "locality": "Museum Towers",
+          "city": "Philadelphia",
+          "city_id": 287,
+          "latitude": "39.9631055556",
+          "longitude": "-75.1683972222",
+          "zipcode": "19130",
+          "country_id": 216,
+          "locality_verbose": "Museum Towers, Philadelphia"
+        },
+        "switch_to_order_menu": 0,
+        "cuisines": "Sandwich",
+        "timings": "7 AM to 11 PM (Mon-Fri),11 AM to 9 PM (Sat-Sun)",
+        "average_cost_for_two": 15,
+        "price_range": 1,
+        "currency": "$",
+        "highlights": [
+          "Credit Card",
+          "Takeaway Available",
+          "Breakfast",
+          "Lunch",
+          "Indoor Seating",
+          "Vegetarian Friendly"
+        ],
+        "offers": [],
+        "opentable_support": 0,
+        "is_zomato_book_res": 0,
+        "mezzo_provider": "OTHER",
+        "is_book_form_web_view": 0,
+        "book_form_web_view_url": "",
+        "book_again_url": "",
+        "thumb": "https://b.zmtcdn.com/data/res_imagery/17016448_CHAIN_21ae20ff55aa7f710865b8455e950830.jpg?fit\u003daround%7C200%3A200\u0026crop\u003d200%3A200%3B%2A%2C%2A",
+        "user_rating": {
+          "aggregate_rating": 0,
+          "rating_text": "Not rated",
+          "rating_color": "CBCBCB",
+          "rating_obj": {
+            "title": {
+              "text": "-"
+            },
+            "bg_color": {
+              "type": "grey",
+              "tint": "400"
+            }
+          },
+          "votes": 1
+        },
+        "all_reviews_count": 0,
+        "photos_url": "https://www.zomato.com/philadelphia/subway-logan-square/photos?utm_source\u003dapi_basic_user\u0026utm_medium\u003dapi\u0026utm_campaign\u003dv2.1#tabtop",
+        "photo_count": 2,
+        "menu_url": "https://www.zomato.com/philadelphia/subway-logan-square/menu?utm_source\u003dapi_basic_user\u0026utm_medium\u003dapi\u0026utm_campaign\u003dv2.1\u0026openSwipeBox\u003dmenu\u0026showMinimal\u003d1#tabtop",
+        "featured_image": "https://b.zmtcdn.com/data/res_imagery/17016448_CHAIN_21ae20ff55aa7f710865b8455e950830.jpg",
+        "has_online_delivery": 0,
+        "is_delivering_now": 0,
+        "store_type": "",
+        "include_bogo_offers": true,
+        "deeplink": "zomato://restaurant/17022905",
+        "is_table_reservation_supported": 0,
+        "has_table_booking": 0,
+        "events_url": "https://www.zomato.com/philadelphia/subway-logan-square/events#tabtop?utm_source\u003dapi_basic_user\u0026utm_medium\u003dapi\u0026utm_campaign\u003dv2.1",
+        "phone_numbers": "(267) 639-2764",
+        "all_reviews": {
+          "reviews": []
+        },
+        "establishment": [
+          "Sandwich Shop"
+        ]
+      }
+    }
+  ]
+}<br/>
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=<br/>
+getting valid response body<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.qa.TestCase.Location@6a2f6f80</td></tr>
+</table><p>
+</body>
+</html>
